@@ -1,10 +1,11 @@
+import { CardList } from "./components/CardList";
 import { Galaxy } from "./components/galaxy";
 import { SunBackground } from "./components/sunBackground";
 import { TextContent } from "./components/TextContent";
 
 export default function App() {
   return (
-    <div className="max-w-5xl mx-auto bg-black h-screen p-5">
+    <div className="max-w-5xl mx-auto bg-black min-h-screen p-5">
       {/* upper section */}
       <section className="relative">
         {/* sun goes here */}
@@ -27,6 +28,8 @@ export default function App() {
         </Galaxy>
       </section>
       {/* lower section */}
+
+      <CardList />
     </div>
   );
 }
