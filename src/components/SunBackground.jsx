@@ -1,32 +1,21 @@
 export const SunBackground = () => {
     return (
-        <div className="relative w-64 h-64">
-            {/* Dim sun (behind) */}
+        <div className="absolute -left-10 top-10 top-5 relative w-72 h-72 flex items-center justify-center">
 
-           
-            {/* Bright Sun (front) */}
-            {/* <img
-                src="/sun-bg-brightness.png"
-                alt="bright sun"
-                className="absolute top-1/2 left-1/2 w-32 
-                   -translate-x-1/2 -translate-y-1/2 z-50"
+            {/* Dim sun (background) */}
+            <img
+                src="/sun-dimmed.png"
+                className="absolute left-10 top-10 w-52 h-52 rounded-full bg-gradient-to-br from-yellow-200 to-yellow-400 blur-3xl opacity-70"
+                alt="Dim sun"
             />
 
+            {/* Bright sun (foreground) */}
             <img
-                src="/sun.png"
-                alt="Dim Sun"
-                className="absolute top-1/2 left-1/2 w-52 opacity-30 blur-md 
-                   -translate-x-1/2 -translate-y-1/2 z-0"
-            /> */}
-
-            <div className="relative w-72 h-72">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <img src="/sun.png" className="w-52 opacity-30 blur-md" />
-                    <img src="/sun-bg-brightness.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 z-10" />
-                </div>
-            </div>
-
+                src="/sun-bright.png"
+                className="absolute w-32"
+                alt="Bright sun"
+            />
 
         </div>
-    )
-}
+    );
+};
